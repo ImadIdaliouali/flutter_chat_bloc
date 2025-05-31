@@ -129,7 +129,3 @@ dependencies:
 2. Navigate to the project directory
 3. Run `flutter pub get` to install dependencies
 4. Run `flutter run` to start the application
-
-## Author
-
-Developed for the Mobile Development exam at Université Hassan II de Casablanca, École Normale Supérieure de l'Enseignement Technique de Mohammedia.
