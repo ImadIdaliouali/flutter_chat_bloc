@@ -13,15 +13,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Chat BLoC',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
-      home: BlocProvider(
-        create: (context) => ConversationBloc()..add(LoadConversations()),
-        child: const ConversationListScreen(),
+    return BlocProvider(
+      create: (context) => ConversationBloc()..add(LoadConversations()),
+      child: MaterialApp(
+        title: 'Flutter Chat BLoC',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+          useMaterial3: true,
+        ),
+        home: const ConversationListScreen(),
       ),
     );
   }
